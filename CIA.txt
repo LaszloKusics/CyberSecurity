@@ -1,0 +1,6 @@
+C = Confidentiality (bizalmasság)
+  – az információhoz történő jogosulatlan hozzáférés megakadályozása
+I = Integrity (integritás)
+  – az információ jogosulatlan módosításának megakadályozása
+A = Availability (rendelkezésre állás)
+  – az információ elérhetőségének biztosítása az arra jogosultak számára
