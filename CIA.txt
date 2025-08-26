@@ -1,6 +1,20 @@
 C = Confidentiality (bizalmasság)
-  – az információhoz történő jogosulatlan hozzáférés megakadályozása
+    – az információhoz történő jogosulatlan hozzáférés megakadályozása
 I = Integrity (integritás)
-  – az információ jogosulatlan módosításának megakadályozása
+    – az információ jogosulatlan módosításának megakadályozása
 A = Availability (rendelkezésre állás)
-  – az információ elérhetőségének biztosítása az arra jogosultak számára
+    – az információ elérhetőségének biztosítása az arra jogosultak számára
+
+
+
+Authentication (hitelesítés)
+    – szolgáltatáshoz vagy erőforráshoz történő hozzáférés kezdeményezője
+      identitásának ellenőrzése (ki akar hozzáférni?)
+Authorization, access control (engedélyezés, hozzáférés-vezérlés)
+    – szolgáltatáshoz vagy erőforráshoz történő hozzáférés engedélyezése
+    – függhet a hozzáférést kezdeményező identitásától, a hozzáférés
+      jellegétől (pl. írás, olvasás), és egyéb körülményektől (pl. idő)
+Accounting (felelősségre vonhatóság)
+    – a rendszerhez történt hozzáférések, az elvégzett műveletek utólagos
+      visszakereshetőségének, ellenőrizhetőségének, a hozzáférést végző
+      entitás azonosíthatóságának és felelősségre vonhatóságának lehetősége
