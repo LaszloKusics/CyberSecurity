@@ -1,0 +1,16 @@
+ARP: Address Resolution Protocoll
+
+- IPv4 based
+- the main purpose is to map IP address (Layer3) to a MAC address (Layer2)
+
+IP Address = Logical identifier (like a house number)
+MAC Address = Physical address (more like a street address)
+
+ARP Cache = a local ARP table for IP to MAC mapping
+
+How it works:
+
+- Sends an ARP request:
+  Who has IP 192.168.1.11?
+- Receive ARP reply (unicast):
+  192.168.1.11 is at CC:DD:EE:EE    the target responds
