@@ -1,6 +1,6 @@
 ARP: Address Resolution Protocoll
 
-- IPv4 based
+- IPv4 based only 
 - the main purpose is to map IP address (Layer3) to a MAC address (Layer2)
 
 IP Address = Logical identifier (like a house number)
@@ -14,3 +14,12 @@ How it works:
   Who has IP 192.168.1.11?
 - Receive ARP reply (unicast):
   192.168.1.11 is at CC:DD:EE:EE    the target responds
+
+Security ISSUES:
+- ARP has no authentication:
+  ARP Spoofin/Poisoning = Attackers can inject false IP-MAC mapping.
+- Mitigation(kockázatcsökkentés) = Dynamic ARP Inspection(DAI), Static ARP entries, VLAN segmentation
+
+Additional:
+IPv6 uses NDP = Neighbour Discovery Protocol 
+
