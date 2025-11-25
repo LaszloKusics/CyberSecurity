@@ -1,15 +1,17 @@
 ARP: Address Resolution Protocoll
 
+- uses data-link layer
+
 - IPv4 based only 
 - the main purpose is to map IP address (Layer3) to a MAC address (Layer2)
 
-IP Address = Logical identifier (like a house number)
+IP Address = Logical identifier (like an apartment number)
 MAC Address = Physical address (more like a street address)
 
 ARP Cache = a local ARP table for IP to MAC mapping
 
 How it works:
-
+Machine A wants to communicate with Machine B, Machine A already knows the IP of Machine B. To communicate Machine A must lear MAC address of Machine B.
 - Sends an ARP request:
   Who has IP 192.168.1.11?
 - Receive ARP reply (unicast):
@@ -19,6 +21,29 @@ Security ISSUES:
 - ARP has no authentication:
   ARP Spoofin/Poisoning = Attackers can inject false IP-MAC mapping.
 - Mitigation(kockázatcsökkentés) = Dynamic ARP Inspection(DAI), Static ARP entries, VLAN segmentation
+
+Types of ARP:
+Categories that indicates how they have been impemented and the usecase they have in different scenarios.
+- Dynamic ARP    = Commonly used in  LANs. Auto created by ARP protocol during normal network communication.
+- Static ARP     = Network admins use this when they want to manualy set IP-MAC adress mappings. They do not expire or get affected by updating processes by dynamic ARP.
+- Proxy ARP      = Enables a Layer3 device, like routers to respond ARP requests on behalf of another devices on different subnet.
+- Gratuitous ARP = proactive broadcast by a device to prevent outdated entries. has two purpose: Update APR caches, Checking duplicates.
+
+       PROs:                CONs:
+network efficiency    |   Vulnerable
+                       
+Auto update to adapt  |   Network
+     changes          |  congestion
+
+
+ARP spoofing:
+Man in the middle attack, attackers intercept communication between network devices.
+Attackers who has access to the network can send false APR messages, false IP - MAC mappings. With it, attackers can misdirect data.
+
+
+
+
+
 
 Additional:
 IPv6 uses NDP = Neighbour Discovery Protocol 
