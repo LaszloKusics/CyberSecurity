@@ -1,0 +1,33 @@
+NTP: Network Time Protocol
+
+- Uses UDP, port123 
+
+- purpose to synchronize the clocks of computers and network devices
+
+Criticl for:
+- Security (Kerberos, Cerificats, Logs)
+- Complience and auditing
+
+How it works:
+- Client sends request with timestamp T1
+- Server records T2 (receive time) and send time T3
+- Clinet notes T4 (response arrival)
+- Calculates offset and round-trip delay to adjuct clock
+
+Accuracy:
+- Public internet = miliseconds
+- LAN = Better than 1 ms
+
+Other version:
+- SNTP (Simple NTP) lightweighrt version
+
+NTP is vulnerable to:
+- Spoofing / Time Injection
+- DoS attacks
+- Configuration tampering
+
+Best Practices:
+- Multiple NTP servers for redundancy
+- Enable authentication
+- Access to trusted clients only
+- Monitor NTP trfic for anomaly
