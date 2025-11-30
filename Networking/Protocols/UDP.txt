@@ -1,0 +1,11 @@
+UDP (User Datagramm Protocol
+
+- Transport Layer (Layer 4) protocol
+- Connectionless = does not establish a session before sending data.
+  Independently sends packets (datagramm) without guaranteeing delivery. This makes UDP fast and lightweight, ideal for real-time applications.
+  Supports Broadcast and Multicast: Efficient to send data to multiple recipients
+
+
+- Undeliable: no guarantee of delivery or order
+- No congestion control: Can flood networks
+- No error recovery
